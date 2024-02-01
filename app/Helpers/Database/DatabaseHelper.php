@@ -1,7 +1,6 @@
 <?php
 namespace App\Helpers\Database;
 
-use App\Models\Admin\User;
 use Illuminate\Database\Schema\Blueprint;
 
 class DatabaseHelper
