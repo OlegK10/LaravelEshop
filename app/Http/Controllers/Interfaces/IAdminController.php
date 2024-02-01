@@ -6,5 +6,5 @@ use Illuminate\Contracts\View\View;
 
 interface IAdminController 
 {
-    public function show(string $viewPath): View;
+    public function show(string $viewPath, array $data): View;
 }

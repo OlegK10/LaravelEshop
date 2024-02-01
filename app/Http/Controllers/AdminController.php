@@ -7,8 +7,9 @@ use Illuminate\Contracts\View\View;
 
 abstract class AdminController extends Controller implements IAdminController
 {
-    public function show(string $viewPath): View 
+    private const ADMIN_VIEW = 'admin';
+    public function show(string $viewPath, array $data = []): View
     {
-        return view('admin.'.$viewPath);
+        return view(self::ADMIN_VIEW . '.' . $viewPath, $data);
     }
 }
