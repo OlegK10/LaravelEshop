@@ -8,9 +8,10 @@ use Illuminate\Contracts\View\View;
 
 class DashboardController extends AdminController
 {
-    public function render(): View
+    public function index(): View
     {
-        $user = User::where('name', 'admin')->first()->email;
+        $user = User::query()->where('name', 'admin')->first();
+        
         debug($user);
         return $this->show('Dashboard.Dashboard');
     }
