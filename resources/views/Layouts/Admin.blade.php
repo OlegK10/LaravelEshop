@@ -14,10 +14,12 @@
         <aside class="w-64 fixed h-screen bg-theme-1 shadow-r p-4">
             @include('Admin.Menu.Menu')
         </aside>
-        <section class="ml-64 p-4">
+        <section class="ml-64 w-full">
             @yield('content')
         </section>
     </div>
+
+    @include('Admin.Components.FlashMessages');
 </body>
 
 @vite('resources/js/admin.js')

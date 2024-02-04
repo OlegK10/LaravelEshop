@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Controllers\Admin\Dashboard\DashboardController;
 use App\Controllers\Admin\Homepage\HPSettingsController;
-use App\Models\Admin\Homepage\HPSettings;
 
 Route::get('/', function () {
     return view('Admin.Dashboard.Dashboard');
