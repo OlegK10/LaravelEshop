@@ -34,10 +34,11 @@ module.exports = {
                 "theme-1": "rgba(241, 245, 249)",
                 "theme-2": "rgba(255, 255, 249)",
                 "rev-theme-1": "rgba(24,24,24)",
-                "main": "rgba(145,200,51)",
+                "main": "#BF72FB",
                 "green": "rgba(74, 222, 128)",
                 "red": "rgba(255, 0, 10)",
-                "orange": "#F7B408"
+                "orange": "#F7B408",
+                "blue": "#72C2FB"
             }
         },
     },

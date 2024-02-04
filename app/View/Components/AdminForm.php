@@ -9,9 +9,15 @@ use Illuminate\Contracts\View\View;
 class AdminForm extends Component
 {
     public $route;
-    public function __construct($route)
+    public $lang;
+    public function __construct(string $route, string $lang = 'cz')
     {
         $this->route = $route;
+        $this->lang = $lang;
     }
 
+    public function render(): View|Closure|string
+    {
+        return view('Admin.Components.Form');
+    }
 }
