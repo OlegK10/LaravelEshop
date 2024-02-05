@@ -11,6 +11,10 @@
 
 <body class="font-default  ">
     <header>
+        @auth
+            @include('Admin.Panel.AdminPanel')
+        @endauth
+
         @include('Front.Components.Menu')
     </header>
 

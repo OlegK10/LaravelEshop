@@ -9,3 +9,10 @@
         <a class="hover:text-m px-7 rounded-full " href="">Kontakt</a>
     </div>
 </nav>
+
+
+@auth
+    <script>
+        document.querySelector("nav").classList.add("mt-12");
+    </script>
+@endauth

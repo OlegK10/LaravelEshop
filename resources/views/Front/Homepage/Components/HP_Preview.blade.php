@@ -1,7 +1,7 @@
 <div class="bg-l1 p-5 text-d1">
 
     @auth
-        @include('Front.Homepage.Components.EDIT_HP_Preview')
+        @include('Front.Homepage.Forms.EditHPPreview')
     @endauth
 
 

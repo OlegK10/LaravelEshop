@@ -1,5 +1,5 @@
 document.querySelectorAll("[edit-form]")?.forEach(function (form) {
-    form.classList.add("hidden");
+    // form.classList.add("hidden");
 });
 
 document.querySelectorAll("[btn-show-edit-form]")?.forEach(function (btn) {

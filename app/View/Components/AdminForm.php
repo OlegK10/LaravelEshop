@@ -18,6 +18,6 @@ class AdminForm extends Component
 
     public function render(): View|Closure|string
     {
-        return view('Admin.Components.Form');
+        return view('Admin.Form.EditForm');
     }
 }

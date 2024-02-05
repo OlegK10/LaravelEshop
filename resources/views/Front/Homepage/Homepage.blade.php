@@ -10,13 +10,12 @@
     brightness-50">
 </div>
 
-<div class="h-screen flex items-center justify-center w-full -z-50 fixed text-white text-6xl font-mayor font-light tracking-widest">
-    <div>Fitfun</div>
+<div
+    class="h-screen flex items-center justify-center w-full -z-50 fixed text-white text-6xl font-mayor font-light tracking-widest">
+    <div>Hotel name</div>
 </div>
 <div class="h-screen"></div>
 
 @section('content')
-    <div class="">
-        @include('Front.Homepage.Components.HP_Preview')
-    </div>
+    @include('Front.Homepage.Components.HP_Preview')
 @endsection

@@ -20,7 +20,7 @@
     </div>
 
     @include('Admin.Components.FlashMessages');
+    @vite('resources/js/admin.js')
 </body>
 
-@vite('resources/js/admin.js')
 </html>

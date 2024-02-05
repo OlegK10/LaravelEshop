@@ -39,11 +39,15 @@ module.exports = {
                 default: ['Montserrat', 'sans-serif'],
                 mayor: ["Cinzel", 'serif']
             },
+            zIndex: {
+                '60': '60',
+            },
             colors: {
                 "l1": "white",
                 "l2": "DFDFDF",
                 "d1": "#242424",
                 "d2": "#4E4E4E",
+                "d3":"#717171",
                 "m": '#BDCD05',
                 "od1": 'rgba(24,24,24,0.5)',
                 "green": '#21CD05',
