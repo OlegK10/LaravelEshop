@@ -1,12 +1,16 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Controllers\Admin\Dashboard\DashboardController;
+use App\Controllers\Front\Homepage\HomepageController;
+use Illuminate\Support\Facades\Route;
 use App\Controllers\Admin\Homepage\HPSettingsController;
 
-Route::get('/', function () {
-    return view('Admin.Dashboard.Dashboard');
-});
+Route::redirect('/', 'homepage');
+
+#START Home Routes
+Route::get('/homepage', [HomepageController::class, 'index'])->name('homepage');
+
+#END Home routes
 
 
 #START Admin Routes

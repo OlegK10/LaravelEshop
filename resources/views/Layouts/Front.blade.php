@@ -9,9 +9,14 @@
     <title>Document</title>
 </head>
 
-<body>
-    
+<body class="font-default  ">
+    <header>
+        @include('Front.Components.Menu')
+    </header>
+
+    @yield('content')
 </body>
 
-@vite('resources/js/admin.js')
+@vite('resources/js/front.js')
+
 </html>

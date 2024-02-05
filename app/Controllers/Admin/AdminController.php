@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers;
 
 use App\Enums\FlashMessagesEnum;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\Interfaces\IAdminController;
 use App\Objects\FlashMessageObject;
 use Illuminate\Contracts\View\View;
