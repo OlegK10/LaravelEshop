@@ -17,9 +17,9 @@ document.querySelectorAll("[btn-show-edit-form]")?.forEach(function (btn) {
 });
 
 document.querySelectorAll("[btn-close-edit-form]")?.forEach(function (btn) {
-    console.log("ASF");
     btn.addEventListener("click", function () {
         btn.closest("[edit-form]")?.classList.add('-left-full');
+        btn.closest("[edit-form]")?.classList.remove('left-0');
     });
 })
 

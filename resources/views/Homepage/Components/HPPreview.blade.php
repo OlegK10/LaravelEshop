@@ -1,8 +1,6 @@
 <div class="bg-l1 p-5 text-d1">
 
-    @auth
-        @include('Front.Homepage.Forms.EditHPPreview')
-    @endauth
+    @include('Admin.EditForms.HPPreviewEdit')
 
 
     <div class="text-lg flex justify-between ">

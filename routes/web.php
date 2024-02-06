@@ -4,6 +4,7 @@ use App\Controllers\Admin\Dashboard\DashboardController;
 use App\Controllers\Front\Homepage\HomepageController;
 use Illuminate\Support\Facades\Route;
 use App\Controllers\Admin\Homepage\HPSettingsController;
+use App\Http\Middleware\Authenticate;
 
 Route::redirect('/', 'homepage');
 
@@ -16,11 +17,7 @@ Route::get('/homepage', [HomepageController::class, 'index'])->name('homepage');
 #START Admin Routes
 
 Route::prefix('admin')->group(function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-
-    Route::prefix('hp')->group(function () {
-        Route::get('/settings', [HPSettingsController::class, 'index'])->name('hp-settings');
-    });
-});
+    Route::get('/homepage', [HomepageController::class, 'index'])->name('hp-settings');
+})->middleware(Authenticate::class);
 
 #END Admin routes

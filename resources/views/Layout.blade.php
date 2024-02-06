@@ -11,11 +11,11 @@
 
 <body class="font-default">
     <header>
-        @auth
+        @if (isAdmin())
             @include('Admin.Panel.AdminPanel')
-        @endauth
+        @endif
 
-        @include('Front.Components.Menu')
+        @include('Components.Menu')
     </header>
 
     @yield('content')
@@ -24,5 +24,7 @@
     @auth
         @vite('resources/js/admin.js')
     @endauth
+    @vite('resources/js/front.js')
 </body>
+
 </html>
