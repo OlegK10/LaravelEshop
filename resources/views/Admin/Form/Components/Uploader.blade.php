@@ -3,7 +3,7 @@
     $unic = Uuid::uuid4();
 @endphp
 
-<div class="flex flex-col">
+<div class="flex flex-col w-full">
     <div class="ml-3">Obrázek</div>
     <div class="relative group">
         <img class="rounded-sm w-full h-60"

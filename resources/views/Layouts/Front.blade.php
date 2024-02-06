@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body class="font-default  ">
+<body class="font-default">
     <header>
         @auth
             @include('Admin.Panel.AdminPanel')
@@ -19,8 +19,10 @@
     </header>
 
     @yield('content')
+
+
+    @auth
+        @vite('resources/js/admin.js')
+    @endauth
 </body>
-
-@vite('resources/js/front.js')
-
 </html>
